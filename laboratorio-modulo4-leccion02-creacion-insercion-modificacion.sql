@@ -240,41 +240,41 @@ select *
 from envios
 where id_empleado = 3;
 
--- 3. Listar todos los productos incluidos en un envío específico.
+ 3. Listar todos los productos incluidos en un envío específico.
 select *
 from detalles_envios
 where id_envio = 4;
 
--- 4. Encontrar todos los proveedores con un teléfono específico.
+ 4. Encontrar todos los proveedores con un teléfono específico.
 select *
 from proveedores
 where telefono = 987654321;
 
--- 5. Listar los empleados que tienen un cargo de "Supervisor de Envíos".
+ 5. Listar los empleados que tienen un cargo de "Supervisor de Envíos".
 select *
 from empleados
 where cargo = 'Supervisor de Envíos';
 
--- 6. Obtener todos los envíos que fueron realizados por el cliente con id_cliente = 5.
+- 6. Obtener todos los envíos que fueron realizados por el cliente con id_cliente = 5.
 select *
 from envios
 where id_cliente = 5;
 
--- 7. Listar todas las regiones con su nombre y país. (Lo del país no hay que hacerlo)
+ 7. Listar todas las regiones con su nombre y país. (Lo del país no hay que hacerlo)
 select nombre
 from regiones;
 
--- 8. Mostrar todos los productos cuyo precio unitario sea mayor que 50.
+ 8. Mostrar todos los productos cuyo precio unitario sea mayor que 50.
 select *
 from detalles_envios
 where precio_unitario > 50;
 
--- 9. Obtener todos los envíos realizados el 2024-08-05. 
+ 9. Obtener todos los envíos realizados el 2024-08-05. 
 select *
 from envios
 where fecha_envio = '2024-08-05';
 
--- 10. Listar todos los clientes que tienen un número de teléfono que comienza con "6003".
+10. Listar todos los clientes que tienen un número de teléfono que comienza con "6003".
 select *
 from clientes
 where telefono like '6001%';
